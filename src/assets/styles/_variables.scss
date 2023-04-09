@@ -1,0 +1,11 @@
+@use "sass:color";
+
+$font-family-sans-serif: "Anuphan", "Calibri", "Verdana";
+$font-family-serif: "Anuphan","calibri", "Verdana";
+$titulo: #470a84;
+$texto: #a4792e;
+$enlaces:grey;
+$fondo: #ffdc9a;
+$index-bg: color.scale($fondo, $lightness: 70%);
+
+$mqMinWidth: 420px;

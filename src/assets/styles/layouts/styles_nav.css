@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* ------------------------------------------
+  RESET
+--------------------------------------------- */
+nav {
+  margin: 10px;
+  padding: 2;
+  border: 2;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+/* ------------------------------------------
+  BASE DEMO STYLES
+--------------------------------------------- */
+/* ------------------------------------------
+  NAVIGATION STYLES
+  (+ responsive-nav.css file is loaded in the <head>)
+--------------------------------------------- */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-collapse,
+.nav-collapse * {
+  box-sizing: border-box;
+}
+
+.nav-collapse,
+.nav-collapse ul li {
+  width: 100%;
+  float: left;
+  list-style: none;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    width: 25%;
+    width: 24.9%; /* IE7 Hack */
+    width: 19%; /* IE6 Hack */
+  }
+}
+.nav-collapse a {
+  width: 100%;
+  padding: 0.7em 1em;
+  float: left;
+  background: #f6d070;
+  color: #d17d3d;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse a {
+    margin: 0;
+    padding: 1em;
+    float: left;
+    border-right: 1px solid white;
+    border-bottom: 0;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+.nav-collapse ul ul a {
+  padding-left: 2em;
+  background: #d17d3d;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse ul ul a {
+    display: none;
+  }
+}
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+@font-face {
+  font-family: "responsivenav";
+  font-style: normal;
+  font-weight: normal;
+}
+.nav-toggle {
+  position: fixed;
+  width: 70px;
+  height: 55px;
+  float: right;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  text-indent: -999px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.nav-toggle:before {
+  content: "≡";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #cd7029; /* Edit this to change the icon color */
+  font-family: "responsivenav", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 55px;
+  text-align: center;
+  text-indent: 0;
+  text-transform: none;
+}
+
+.nav-toggle.active::before {
+  content: "x";
+  font-size: 24px;
+} /*# sourceMappingURL=styles_nav.css.map */

@@ -1,0 +1,59 @@
+  <DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! --> 
+  
+
+    <title>PEC1</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class ="nav-collapse">
+           <ul class="nav-collapse__list">
+            <li class="nav-collapse__list"><a href="#historia">Historia</i></a></li>
+            <li class="nav-collapse__list"><a href="#arquitectura">Arquitectura</a></li>
+            <li class="nav-collapse__list"><a href="#arte_figurativo">Arte figurativo</a></li>
+            <li class="nav-collapse__list"><a href="#localizacion">Localización</a></li>
+            <li class="nav-collapse__list"><a href="http://www.turismocastillalamancha.es/albacete/">La ciudad</a></li>
+          </ul>
+  </div>
+    </header>
+
+    <container class ="container">
+         <picture>
+        <source srcset="./assets/images/catedral-de-san-juan-bautista.jpg?as=webp&width=960" type="image/webp" />
+        <img src="./assets/images/catedral-de-san-juan-bautista.png?width=550" alt="Fachada principal de la Catedral de Albacete" class="image" />
+         </picture>
+        
+      <div class="container__texto">
+      <h1 class="container__titulo">Catedral de San Juan Bautista</h1>
+      <p>
+        Sobre la antigua iglesia mudéjar se alza un templo de base gótica y corona barroca, sostenido en la parte central por cuatro columnas renacentistas. Su interior alberga tablas barrocas como la de la Virgen de la Estrella, la pila bautismal rococó, retablos renacentistas como el de la Virgen de los Llanos, la representación del calvario en las grisallas de la sacristía de estilo manierista, una custodia de plata dorada de 1583…
+
+        Como curiosidad, el largo proceso de su construcción. Se inició en 1515, pero en 1538 se sustituyeron los pilares góticos por las actuales columnas renacentistas, lo que produjo el desplome de las bóvedas góticas. La catedral permaneció construida pero sin bóvedas hasta 1690 cuando se realizaron las actuales, de estilo barroco, Mientras tanto, el presupuesto se había consumido en la sacristía. Durante la guerra civil, la catedral sufrió daños y saqueos mientras se terminaba la fachada principal; de esta fase es la destrucción de la última parte mudéjar.
+      </p>
+  </div>
+    
+    <include src="./views/historia.html"></include>
+
+    <include src="./views/arquitectura.html"></include>
+
+    <include src="./views/arte_figurativo.html"></include>
+    
+    <include src="./views/localizacion.html"></include>
+    
+  </container>
+  
+  <include src="./views/footer.html"></include>
+    
+  
+    
+    <script type="module" src="./assets/scripts/main.js"></script>  <!-- do not remove this line! -->
+    
+   
+
+</body>
+</html>
